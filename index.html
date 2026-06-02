@@ -47,11 +47,13 @@ Ingresar al Sistema
 <h2>SmartPredict</h2>
 
 <ul>
-<li>🏠 Dashboard</li>
-<li>💻 Equipos</li>
-<li>⚠ Alertas</li>
-<li>📊 Reportes</li>
-<li>☁ Nube</li>
+<li onclick="mostrarSeccion('dashboardContent')">Dashboard</li>
+
+<li onclick="mostrarSeccion('equiposContent')">Equipos</li>
+
+<li onclick="mostrarSeccion('alertasContent')">Alertas</li>
+
+<li onclick="mostrarSeccion('reportesContent')">Reportes</li>
 </ul>
 
 <button onclick="salir()">
@@ -61,6 +63,64 @@ Cerrar Sesión
 </div>
 
 <div class="main">
+
+<div id="dashboardContent">
+
+<h1>Centro de Monitoreo</h1>
+
+<!-- tus cards actuales -->
+
+</div>
+
+<div id="equiposContent" style="display:none;">
+
+<h1>Equipos Registrados</h1>
+
+<table>
+
+<tr>
+<th>Equipo</th>
+<th>Estado</th>
+<th>Salud</th>
+<th>Acción</th>
+</tr>
+
+<tr>
+<td>PC-01</td>
+<td>Operativo</td>
+<td>98%</td>
+<td>
+<button onclick="verPC('PC-01')">
+Ver
+</button>
+</td>
+</tr>
+
+<tr>
+<td>PC-02</td>
+<td>Operativo</td>
+<td>95%</td>
+<td>
+<button onclick="verPC('PC-02')">
+Ver
+</button>
+</td>
+</tr>
+
+<tr>
+<td>PC-03</td>
+<td>Riesgo Medio</td>
+<td>72%</td>
+<td>
+<button onclick="verPC('PC-03')">
+Ver
+</button>
+</td>
+</tr>
+
+</table>
+
+</div>
 
 <h1>Centro de Monitoreo</h1>
 
@@ -123,23 +183,27 @@ Estado de Equipos
 
 </div>
 
-<h2 class="titulo">
-Alertas Predictivas
-</h2>
+<div id="alertasContent" style="display:none;">
 
-<div class="alertas">
+<h1>Alertas Activas</h1>
 
 <div class="alerta">
-⚠ PC-03 presenta uso anómalo de memoria.
+PC-03 presenta uso excesivo de RAM.
 </div>
 
 <div class="alerta">
-⚠ PC-04 podría fallar en menos de 48 horas.
+PC-04 presenta temperatura elevada.
 </div>
 
-<div class="alerta">
-⚠ Temperatura elevada detectada.
 </div>
+
+<div id="reportesContent" style="display:none;">
+
+<h1>Reportes</h1>
+
+<button>Exportar PDF</button>
+
+<button>Exportar Excel</button>
 
 </div>
 
