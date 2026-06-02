@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartPredict AI</title>
 
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- LOGIN -->
+
+<section id="loginPage">
+
+<div class="background"></div>
+
+<div class="login-box">
+
+<h1>SMARTPREDICT AI</h1>
+
+<p>
+Sistema Inteligente de Mantenimiento Predictivo
+</p>
+
+<input type="text" id="user" placeholder="Usuario">
+
+<input type="password" id="pass" placeholder="Contraseña">
+
+<button onclick="ingresar()">
+Ingresar al Sistema
+</button>
+
+</div>
+
+</section>
+
+<!-- DASHBOARD -->
+
+<section id="dashboard">
+
+<div class="sidebar">
+
+<h2>SmartPredict</h2>
+
+<ul>
+<li>🏠 Dashboard</li>
+<li>💻 Equipos</li>
+<li>⚠ Alertas</li>
+<li>📊 Reportes</li>
+<li>☁ Nube</li>
+</ul>
+
+<button onclick="salir()">
+Cerrar Sesión
+</button>
+
+</div>
+
+<div class="main">
+
+<h1>Centro de Monitoreo</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>50</h2>
+<p>Equipos</p>
+</div>
+
+<div class="card">
+<h2>4</h2>
+<p>Alertas</p>
+</div>
+
+<div class="card">
+<h2>93%</h2>
+<p>Salud General</p>
+</div>
+
+</div>
+
+<h2 class="titulo">
+Estado de Equipos
+</h2>
+
+<div class="pcs">
+
+<div class="pc">
+<h3>PC-01</h3>
+<div class="barra">
+<div class="verde" style="width:98%"></div>
+</div>
+<p>Estado Excelente</p>
+</div>
+
+<div class="pc">
+<h3>PC-02</h3>
+<div class="barra">
+<div class="verde" style="width:92%"></div>
+</div>
+<p>Estado Óptimo</p>
+</div>
+
+<div class="pc">
+<h3>PC-03</h3>
+<div class="barra">
+<div class="amarillo" style="width:72%"></div>
+</div>
+<p>Posible falla en memoria RAM</p>
+</div>
+
+<div class="pc">
+<h3>PC-04</h3>
+<div class="barra">
+<div class="rojo" style="width:45%"></div>
+</div>
+<p>Alto riesgo de falla</p>
+</div>
+
+</div>
+
+<h2 class="titulo">
+Alertas Predictivas
+</h2>
+
+<div class="alertas">
+
+<div class="alerta">
+⚠ PC-03 presenta uso anómalo de memoria.
+</div>
+
+<div class="alerta">
+⚠ PC-04 podría fallar en menos de 48 horas.
+</div>
+
+<div class="alerta">
+⚠ Temperatura elevada detectada.
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
